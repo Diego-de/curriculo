@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <style>
+        body{
+            background-color:#F7F7F7;
+        }
+        #foto{
+            border-radius: 150px;
+        }
+        ul li{
+            list-style: none;
+        }
+        legend{
+            background-color: blue;
+            color: aqua;
+        }
+        #main{
+            width: 800px;
+            margin-left: 250px;
+        }
+        #menu{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .nav-item{
+            margin: 0 25px;
+        }
+        #div1{
+            margin-top: 100px;
+        }
+    </style>
+
+    <title>Curriculo</title>
+</head>
+<body>
+<nav class="nav navbar  navbar-expand-lg navbar-dark bg-ligth navbar fixed-top" id="menu" style="background-color: #00AB80;">
+    <div class="collapse navbar-collapse justify-content-center ">
+        <ul class="navbar-nav d-flex align-items-center ">
+            <li class="nav-item">
+                <a class="nav-link " onclick="apertar()" href="#main">Dados pessoais</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="apertar2()"  href="#cursos">Curso</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="apertar3()"  href="#formacoes">Formações</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" onclick="apertar4()"  href="#hobbies">Hobbies</a>
+            </li>
+        </ul>
+    </div>      
+</nav>
+    
+    <div class="container" id="div1">
+        <div class="table text-center" id="main">
+        <img src="rosto.png" alt="rosto" width="200px" height="200px" id="foto">
+        <h4>Diego Gomes de souza</h4>
+
+        <fieldset>
+            <legend id="dados">Dados pessoais</legend>
+            <ul class="text-start">            
+                <li>Data de nascimento:04/07/2001</li>
+                <li>Telefone :(81) 98368-7056, (81) 98730-9367</li>
+                <li>E-mail: Diego04dgs@gmail.com</li>
+                <li>Endereço: 5º travessa Rua João Cavalcanti Petribu, Recife/ Pe</li>
+                <li>Meu github: <a href="https://github.com/Diego-de" target="_blank">Diego-de</a></li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend id="cursos">Cursos</legend>            
+            <ul class="text-start">
+                <li>Word basico</li>
+                <li>Excel basico</li>
+                <li>Sistemas para internet(2˚ período)</li>            
+            </ul>
+        </fieldset> 
+
+        <fieldset >
+            <legend id="formacoes">Formações acadêmicas</legend>
+            <ul class="text-start">
+                <li>Ensino Médio Completo</li>
+                <li> Cursando Sistemas para internet (2º período) na Universidade
+                 Católica de Pernambuco.</li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend id="hobbies">Hobbies</legend>
+            <ul class="text-start">
+                <li>Estudar</li>
+                <li>Praticar</li>
+                <li>Assistir Series e filmes</li>
+            </ul>
+        </fieldset>
+        </div>
+    </div>
+
+
+<script>
+    function apertar(){
+        document.getElementById("dados").style.backgroundColor = 'red';
+
+        document.getElementById("cursos").style.backgroundColor = 'blue';
+        document.getElementById("formacoes").style.backgroundColor = 'blue';
+        document.getElementById("hobbies").style.backgroundColor = 'blue';
+    }
+    function apertar2(){
+        document.getElementById("cursos").style.backgroundColor = 'red';
+
+        document.getElementById("dados").style.backgroundColor = 'blue';
+        document.getElementById("formacoes").style.backgroundColor = 'blue';
+        document.getElementById("hobbies").style.backgroundColor = 'blue';
+    }   
+    function apertar3(){
+        document.getElementById("formacoes").style.backgroundColor = 'red';
+
+        document.getElementById("dados").style.backgroundColor = 'blue';
+        document.getElementById("cursos").style.backgroundColor = 'blue';
+        document.getElementById("hobbies").style.backgroundColor = 'blue';
+    }   
+    function apertar4(){
+        document.getElementById("hobbies").style.backgroundColor = 'red';
+
+        document.getElementById("dados").style.backgroundColor = 'blue';
+        document.getElementById("cursos").style.backgroundColor = 'blue';
+        document.getElementById("formacoes").style.backgroundColor = 'blue';
+    }      
+</script>
+</body>
+</html> 
